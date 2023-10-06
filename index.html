@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+	
+	<header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>                      
+        <nav>
+            <ul class="nav-links"> 	
+                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="#pasteles" onclick="closeNav()"><i class="fas fa-birthday-cake"></i> Pasteles</a></li>
+                <li><a href="#"><i class="fas fa-cookie"></i> Postres</a></li>
+                <li><a href="#">Panes</a></li>
+            </ul>
+        </nav>
+        <a href="#contactar" class="btn"><button>Contacto</button></a>
+        <a onclick="openNav()" class="menu" href="#"><button><i class="fas fa-bars"></i></button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="#" class="close"><i class="fa-solid fa-arrow-right-from-bracket" style="color: #080808;"></i>Cerrar</a>
+            <div class="overlay-content">
+				<a href="#" onclick="closeNav()"><i class="fas fa-home"></i>Inicio</a>
+				<a href="#pasteles" onclick="closeNav()"><i class="fas fa-birthday-cake"></i>Pasteles</a>
+				<a href="#" onclick="closeNav()"><i class="fas fa-cookie"></i>Postres</a>
+				<a href="#" onclick="closeNav()"><i class="fas fa-bread-slice"></i>Panes</a>
+				<a href="#contactar" onclick="closeNav()"><i class="fas fa-envelope"></i>Contacto</a>
+			  </div>
+        </div>
+    </header>
+	
+    <section id="container-slider">	
+		<ul class="listslider">
+			<li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+			<li><a itlist="itList_1" href="#" class="item-select-slid"></a></li>
+			<li><a itlist="itList_2" href="#" class="item-select-slid"></a></li>
+		</ul>
+		<ul id="slider">
+			<li style="background-image: url('img/slide1.png'); z-index:1; opacity: 1; ">
+				<div class="content_slider" >
+					<div>
+						<h2>Dulces y postres</h2>
+						<p>Nos ajustamos al presupuesto de cada cliente</p>
+						<a href="#" class="btnSlider">Ver más</a>
+					</div>
+				</div>
+			</li>
+			<li style="background-image: url('img/slide2.png'); z-index:1; opacity: 1; ">
+				<div class="content_slider" >
+					<div>
+						<h2>Cada pastel es un sueño</h2>
+						<p>Pasteles 100% comestibles</p>
+						<a href="#" class="btnSlider">Ver más</a>
+					</div>
+				</div>
+			</li>
+			<li style="background-image: url('img/slide3.png'); z-index:1; opacity: 1; ">
+				<div class="content_slider" >
+					<div>
+						<h2>Pasteles 100% comestibles</h2>
+						<p>Algo especial, para alguien especial</p>
+						<a href="#" class="btnSlider">Ver más</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</section>
+
+    <script type= "text/javascript" src="function.js"></script>
+
+	<div class="title">
+		<h3>¡Descubre nuestros paquetes!</h3>
+		<p>Puedes pedir paquetes personalizados a tu gusto</p>
+	</div>
+
+	<div class="cards-container">
+		<div class="card">
+		  <img src="img/a.jpg" alt="Producto 1" loading="lazy">
+		  <h3>Paquete de Dulces 1</h3>
+		  <p>Descripción del paquete de dulces 1.</p>
+		</div>
+	
+		<div class="card">
+		  <img src="img/pack1.png" alt="Producto 2" loading="lazy"> 
+		  <h3>Paquete de Dulces 2</h3>
+		  <p>Descripción del paquete de dulces 2.</p>
+		</div>
+	
+		<div class="card">
+		  <img src="img/pack2.png" alt="Producto 3" loading="lazy">
+		  <h3>Candy Bar 1</h3>
+		  <p>Descripción del Candy Bar 1.</p>
+		</div>
+	
+		<div class="card">
+		  <img src="img/a.jpg" alt="Producto 4" loading="lazy">
+		  <h3>Candy Bar 2</h3>
+		  <p>Descripción del Candy Bar 2.</p>
+		</div>
+	</div>
+
+	<div class="title">
+		<h3><br><br>Pasteles para todos los gustos</h3>
+	</div>
+	
+	<section id = "pasteles" class="gallery">
+		<div class="gallery-item">
+		  <img src="img/cake1.png" alt="Pastel 1" height="100" width="auto" loading="lazy">>
+		  <div class="description">Revelación de genero</div>
+		</div>
+		<div class="gallery-item">
+		  <img src="img/cake2.jpg" alt="Pastel 2" loading="lazy">
+		  <div class="description">Descripción del pastel 2</div>
+		</div>
+		<div class="gallery-item">
+			<img src="img/cake3.jpg" alt="Pastel 2" loading="lazy">
+			<div class="description">Descripción del pastel 2</div>
+		  </div>
+		  <div class="gallery-item">
+			<img src="img/cake4.jpg" alt="Pastel 2" loading="lazy">
+			<div class="description">Descripción del pastel 2</div>
+		  </div>
+		<!-- Agrega más elementos .gallery-item con imágenes y descripciones -->
+	</section>
+
+	<section class="productos">
+        <article class="producto">
+            <img src="img/cake1.png" alt="Pastel de Chocolate" loading="lazy">
+            <h2>Pastel de Chocolate</h2>
+            <p>Un pastel suave y delicioso de chocolate.</p>
+            <p class="precio">$20.00</p>
+            <button class="boton-comprar">Comprar</button>
+        </article>
+        <article class="producto">
+            <img src="img/cake2.jpg" alt="Pastel de Fresa" loading="lazy">
+            <h2>Pastel de Fresa</h2>
+            <p>Un pastel fresco y afrutado de fresa.</p>
+            <p class="precio">$18.00</p>
+            <button class="boton-comprar">Comprar</button>
+        </article>
+		<article class="producto">
+            <img src="img/cake1.png" alt="Pastel de Chocolate" loading="lazy">
+            <h2>Pastel de Chocolate</h2>
+            <p>Un pastel suave y delicioso de chocolate.</p>
+            <p class="precio">$20.00</p>
+            <button class="boton-comprar">Comprar</button>
+        </article>
+        <article class="producto">
+            <img src="img/cake2.jpg" alt="Pastel de Fresa" loading="lazy">
+            <h2>Pastel de Fresa</h2>
+            <p>Un pastel fresco y afrutado de fresa.</p>
+            <p class="precio">$18.00</p>
+            <button class="boton-comprar">Comprar</button>
+        </article>
+        <!-- Agrega más productos aquí -->
+	</section>
+
+	<section id=contactar class="contact-section">
+		<div class="contact-title">
+			<h2>¡Contáctanos!</h2>
+		</div>
+		<div class="contact-buttons">
+			<a href="https://api.whatsapp.com/send?phone=TUNUMERODEWHATSAPP" target="_blank" class="w-button">
+				<i class="fab fa-whatsapp"  ></i>
+				<span class="button-text">Escribenos por WhatsApp</span>
+			</a>
+			<a href="https://www.instagram.com/dulcessaleyda/" target="_blank" class="instagram-button">
+				<i class="fab fa-instagram"></i>
+				<span class="button-text">Siguenos en Instagram</span>
+			</a>
+		</div>
+		<div class="contact-title">
+			<br>
+			<h2>Opciones de pago</h2> 
+		</div>
+		<div class="pago">
+			<div class="metod">
+				<img src="img/m1.png" alt= "Producto 1" loading="lazy">
+				<h3>Efectivo</h3>
+			  </div>
+		  
+			  <div class="metod">
+				<img src="img/m3.png" alt="Producto 2" loading="lazy">
+				<h3>Yappy</h3>
+			  </div>
+		</div>
+	</section>
+	
+	<a href="https://api.whatsapp.com/send?phone=TUNUMERODEWHATSAPP" class="whatsapp-button" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a> 
+
+
+	<footer>
+		<br><br><br><br><hr><br>                                                                                                               
+		<p>@DulcesAleyda</p>
+		<p>Barrigón, El Copé, La Pintada</p>
+		<p>Télefono: (+507) 6873-5906</p>
+	</footer>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
