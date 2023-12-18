@@ -14,7 +14,7 @@
   
 
 body {
-  background: linear-gradient(160deg, #fef1ffda, #ecbbff);
+  background-color: #ffffff;
   /*background-color: #ffffff;*/
 }
 
@@ -22,11 +22,12 @@ body {
 
 .header {
   background: linear-gradient(to top, rgba(255, 255, 255, 0.801), 
-  rgba(209, 59, 255, 0.541)); /* Gradiente de transparencia */
+  rgba(255, 255, 255, 0.664)); /* Gradiente de transparencia */
   display: flex;
   justify-content: center; 
   align-items: center;
-  padding: 12px 25px;
+  padding: 11px 7px;
+  padding-bottom: 4px;
   position: fixed; /* Agregar esta línea */
   top: 0; /* Para fijar el encabezado en la parte superior */
   width: 100%; /* Para ocupar todo el ancho */
@@ -34,13 +35,10 @@ body {
 }
 .fixed-header {
   position: fixed;
-  top: 1%;
+  top: 0;
   width: 100%;
   z-index: 100;
 }
-
-
-
 
 /* Estilos del encabezado */
 
@@ -51,7 +49,7 @@ body {
 .header .logo img {
   height: 33px !important;
   width: auto;
-  margin: 0 90px 0 10px;
+  margin: 0 90px 0 20px;
   transition: all 0.3s;
 }
 
@@ -95,19 +93,17 @@ body {
 .header .btn button,
 .header .menu button {
   font-weight: 600;
-  color: rgb(5, 5, 5);
+  background-color: #ffffff;
+  color: rgb(68, 53, 4);
   padding: 9px 15px;
-  background: bisque;
   border: none;
-  border-radius: 15%;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .header .btn button:hover,
 .header .menu button:hover {
-  background-color: rgba(171, 13, 219, 0.37);
-  color: rgb(248, 246, 247);
+  color: rgb(255, 5, 130);
   transform: scale(1.1);
 }
 
@@ -132,12 +128,12 @@ body {
 
 /* Estilos del menú desplegable */
 .header .overlay {
-  height: 100%;
+  height:auto;
   width: 0;
   position: fixed;
   z-index: 3;
-  left: 10px;
-  top: 20px;
+  left: 15px;
+  top: 30px;
   background: linear-gradient(to bottom right, #ffffffab, #f0e9ec48);
   backdrop-filter: blur(3px);
   border-radius: 8px;
@@ -149,7 +145,7 @@ body {
 .header .overlay .overlay-content {
   display: flex;
   flex-direction: column; /* Añadimos flex-direction: column; para mostrar los enlaces uno debajo del otro */
-  height: 100%;
+  height: auto;
   align-items: left;
   justify-content: center;
 }
@@ -497,7 +493,7 @@ body {
 }
 
 .card {
-  background: linear-gradient(to bottom right, #c781dfe3, #a7d7c591);
+  background-color: #ffffff;
   backdrop-filter: blur(3px); /* Aplicar el efecto glassmorphism mediante backdrop-filter */
   border-radius: 12px;
   padding: 20px;
